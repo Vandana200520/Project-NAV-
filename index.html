@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Navigator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NAV<span class="plus">+</span></div>
+    </nav>
+    <div class="content">
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <label for="current-location">Current Location:</label>
+                <select id="current-location" onchange="populateRooms('current')">
+                    <option value="">Select Department</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                </select>
+                <select id="current-rooms">
+                    <option value="">Select Room</option>
+                    <option value="Room 101">Room 101</option>
+                    <option value="Room 102">Room 102</option>
+                    <option value="Room 103">Room 103</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="destination">Destination:</label>
+                <select id="destination" onchange="populateRooms('destination')">
+                    <option value="">Select Department</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                </select>
+                <select id="destination-rooms">
+                    <option value="">Select Room</option>
+                    <option value="Room 101">Room 101</option>
+                    <option value="Room 102">Room 102</option>
+                    <option value="Room 103">Room 103</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="show-directions" onclick="showDirections()">🗺️ Show Directions</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
