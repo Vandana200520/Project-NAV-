@@ -27,8 +27,9 @@ body {
 }
 
 .content {
-    padding: 100px;
-    background-image: url('bg_blur_img.jpg');
+    height: 62.5vh;
+    padding: 150px;
+    background-image: url('images/bg_img.jpg');
     background-size: cover;      /* Ensures the image covers the entire element */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center;  /* Centers the image */
@@ -50,7 +51,7 @@ label {
     margin-bottom: 10px;
     font-size: larger;
     font-weight: bold;
-    color: #fff;
+    color: #0f0c0c;
 }
 
 select {
@@ -80,4 +81,8 @@ button:hover {
 
 ul li{
     list-style-type: disc;
+}
+
+#image-container {
+    display: none;
 }
